@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:text="@string/agregar_frase_frase"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:id="@+id/TextView01" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		style="@style/TitleBar">
+		<include layout="@layout/action_bar" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_weight="1" android:padding="6dip">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/frase_text" android:text="@string/agregar_frase_frase"
+			android:layout_weight="1"></TextView>
+		<requestFocus android:layout_weight="1"></requestFocus>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="textMultiLine"
+			android:id="@+id/frase_input" android:layout_weight="1">
+			<requestFocus></requestFocus>
+		</EditText>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/autor_text" android:text="@string/agregar_frase_autor"
+			android:layout_weight="1"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="textMultiLine"
+			android:id="@+id/autor_input" android:layout_weight="1"></EditText>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:id="@+id/ok_button" android:layout_gravity="right">
+			<Button
+				style="@style/HomeButton"
+				android:drawableTop="@drawable/ok_button_selector" 
+				android:text="@string/ok" android:id="@+id/save_button"/>
+			<Button
+				android:id="@+id/cancel_button"
+				style="@style/HomeButton"
+				android:drawableTop="@drawable/cancel_button_selector" android:text="@string/cancelar"/>
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+
+</LinearLayout>

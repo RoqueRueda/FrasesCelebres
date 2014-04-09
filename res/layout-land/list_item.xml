@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:paddingLeft="5dp" android:paddingRight="5dp"
+	android:paddingTop="10dp" android:paddingBottom="10dp" android:gravity="center_vertical">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_alignParentLeft="true" android:id="@+id/id_frase"
+		android:text="@string/dummy_id" android:visibility="invisible" />
+	<TextView android:layout_width="fill_parent" android:text="@string/dummy_frase"
+		android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/frase_text" android:layout_below="@+id/id_frase"
+		android:layout_toRightOf="@+id/id_frase" />
+	<TextView android:id="@+id/separador_id_frase"
+		android:layout_height="wrap_content" android:background="@color/pinned_header_background"
+		android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toLeftOf="@+id/autor_text" android:layout_alignTop="@+id/autor_text"
+		android:layout_alignBottom="@+id/autor_text" android:text="@string/separator"
+		android:visibility="invisible" />
+	<ImageView android:id="@+id/i_more" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:src="@drawable/ic_list_more"
+		android:layout_alignParentRight="true" />
+	<TextView android:id="@+id/autor_text" android:layout_height="wrap_content"
+		android:text="@string/dummy_autor" android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toRightOf="@+id/imageView1" android:layout_alignTop="@+id/imageView1"
+		android:layout_alignBottom="@+id/imageView1" android:textColor="@color/autor_text"/>
+	<TextView android:id="@+id/separador_frase_text"
+		android:layout_height="wrap_content" android:text="@string/separator"
+		android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toRightOf="@+id/autor_text" android:layout_alignTop="@+id/autor_text"
+		android:layout_alignBottom="@+id/autor_text" android:textColor="@color/autor_text"/>
+	<ImageView android:src="@drawable/ic_arrow" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:adjustViewBounds="true" android:maxHeight="30.0dp" android:maxWidth="30.0dp"></ImageView>
+
+</RelativeLayout>

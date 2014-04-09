@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="topicosBasesDatos.frases" android:versionCode="2"
+	android:versionName="1.1">
+	<application android:label="@string/app_name"
+		android:icon="@drawable/ic_launcher">
+		
+		<activity android:name=".VisorFrases">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<action android:name="android.intent.action.SEARCH" />
+			</intent-filter>
+			
+			<meta-data android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+		
+		<activity android:name=".Frase" android:label="@string/app_name">
+			<meta-data android:name="android.app.default_searchable"
+                   android:value=".VisorFrases" />
+		</activity>
+
+		<activity android:name=".FraseDiaria" android:label="@string/frase_dia_label"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+
+		<activity android:name=".FraseDetails" android:label="@string/agregar_frase_title">
+		</activity>
+
+		<activity android:name=".EditorFrase" android:label="@string/editar"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+
+	</application>
+	<uses-sdk android:minSdkVersion="6" />
+</manifest> 

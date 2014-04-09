@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/root" android:orientation="vertical">
+	<!-- Note built-in ids for 'list' and 'empty' -->
+	<LinearLayout android:layout_width="fill_parent" style="@style/TitleBar">
+		<include android:layout_height="wrap_content" layout="@layout/action_bar" android:layout_width="fill_parent"></include>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:text="@string/frases" android:id="@+id/visor_frases_text" android:paddingBottom="10dip" android:layout_width="fill_parent" android:paddingTop="10dip"></TextView>
+	<ListView android:id="@android:id/list" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1" android:layout_gravity="fill_vertical"></ListView>
+	<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:text="@string/empty" android:id="@android:id/empty" android:layout_width="wrap_content"></TextView>
+	<ProgressBar style="?android:attr/progressBarStyleLarge" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/loadingFrases" android:layout_gravity="center_horizontal"></ProgressBar>
+
+</LinearLayout>
+	
+
+	

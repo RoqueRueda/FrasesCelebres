@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="frases">Bienvenido puede consultar las frases</string>
+    <string name="app_name">Frases</string>
+    
+    <string name="frase_dia_label">Frase del día</string>
+    <string name="frase_dia_title">Anonimo</string>
+    <string name="agregar_frase_title">Agregar una frase</string>
+    <string name="agregar_frase_autor">Autor:</string>
+    <string name="agregar_frase_frase">Frase:</string>
+    
+    <string name="agregar">Agregar</string>
+    <string name="ver_todos">Ver todos</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="modificar">Modificar</string>
+    <string name="salir">Salir</string>
+    
+    <string name="empty">Cargando frases</string>
+    
+    <string name="cancelar">Cancelar</string>
+    <string name="description_logo">Frases Roque</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_search">Search</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dummy_id">1</string>
+    <string name="separator"> : </string>
+    <string name="dummy_autor">Roque</string>
+    <string name="dummy_frase">HolaMundo</string>
+    <string name="arrow">-</string>
+    <string name="delete">¿Está seguro de que quiere eliminar la frase: </string>
+    <string name="delete_message">Se borrara la frase. Esta acción no se puede deshacer.</string>
+    <string name="search_hint">Search frases</string>
+    
+    <!-- Search failure message. -->
+    <string name="no_results">No results found for \"%s\"</string>
+    
+    <!-- Shown above search results when we receive a search request. -->
+    <plurals name="search_results">
+      <item quantity="one">%1$d result for \"%2$s\": </item>
+      <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+    
+    <!-- The menu entry that invokes search. -->
+    <string name="menu_search">Search</string>
+    <string name="button_description">Estamos trabajando para crear una aplicación que contenga un gran contenido esperamos que disfrutes de nuestras frases célebres y espera las actualizaciones.</string>
+    
+</resources>
